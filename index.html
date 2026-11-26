@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mina Park — Product designer</title>
+    <meta
+      name="description"
+      content="Portfolio of Mina Park, a product designer and front-end developer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to work</a>
+
+    <header class="site-header">
+      <a class="logo" href="#top">Mina Park</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">
+          <span class="theme-icon" aria-hidden="true"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <p class="eyebrow">Portfolio · 2026</p>
+        <h1>Make the hard part feel simple.</h1>
+        <p class="lede">
+          Product designer and front-end developer. I turn messy briefs into
+          clear, usable products — from first sketch to shipped interface.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="#work">See selected work</a>
+          <a class="button button-ghost" href="#contact">Start a project</a>
+        </div>
+        <dl class="hero-stats">
+          <div>
+            <dt>Years</dt>
+            <dd>6</dd>
+          </div>
+          <div>
+            <dt>Shipped products</dt>
+            <dd>18</dd>
+          </div>
+          <div>
+            <dt>Based in</dt>
+            <dd>Seoul</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section id="about" class="about">
+        <div class="section-label">About</div>
+        <div class="about-grid">
+          <h2>Making software feel considered, not crowded.</h2>
+          <div class="about-copy">
+            <p>
+              I work with early teams and established studios to shape products
+              people actually finish using. Most of my time goes to interface
+              systems, prototyping in the browser, and writing the small bits
+              of copy that make a screen feel human.
+            </p>
+            <p>
+              Before freelance work I designed tools at a logistics startup and
+              a design studio. I still like the unglamorous problems: forms,
+              empty states, and the screen someone opens at 11 p.m.
+            </p>
+            <ul class="about-points">
+              <li>Interface design and design systems</li>
+              <li>HTML, CSS, and JavaScript prototypes</li>
+              <li>Workshops with founders and engineers</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="work">
+        <div class="section-head">
+          <div class="section-label">Selected work</div>
+          <div class="filters" role="tablist" aria-label="Filter projects">
+            <button class="filter is-active" type="button" data-filter="all" role="tab" aria-selected="true">
+              All
+            </button>
+            <button class="filter" type="button" data-filter="product" role="tab" aria-selected="false">
+              Product
+            </button>
+            <button class="filter" type="button" data-filter="web" role="tab" aria-selected="false">
+              Web
+            </button>
+            <button class="filter" type="button" data-filter="experiment" role="tab" aria-selected="false">
+              Experiment
+            </button>
+          </div>
+        </div>
+
+        <div class="project-grid" id="project-grid">
+          <article class="project" data-category="product">
+            <div class="project-visual visual-a" aria-hidden="true">
+              <span>01</span>
+            </div>
+            <div class="project-body">
+              <p class="project-meta">Product · 2025</p>
+              <h3>Harbor</h3>
+              <p>
+                A scheduling tool for small freight teams. We cut the morning
+                dispatch from forty minutes to twelve by redesigning the day view.
+              </p>
+              <ul class="tags">
+                <li>Design system</li>
+                <li>Dashboard</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="web">
+            <div class="project-visual visual-b" aria-hidden="true">
+              <span>02</span>
+            </div>
+            <div class="project-body">
+              <p class="project-meta">Web · 2025</p>
+              <h3>Field Notes</h3>
+              <p>
+                Editorial site for a ceramics studio. Long-form stories, a shop,
+                and a type system that still reads well on a phone in the kiln room.
+              </p>
+              <ul class="tags">
+                <li>Editorial</li>
+                <li>E-commerce</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="product">
+            <div class="project-visual visual-c" aria-hidden="true">
+              <span>03</span>
+            </div>
+            <div class="project-body">
+              <p class="project-meta">Product · 2024</p>
+              <h3>Ledger</h3>
+              <p>
+                Personal finance for people who dislike spreadsheets. Gentle
+                categories, a weekly review, and no red warning badges.
+              </p>
+              <ul class="tags">
+                <li>Mobile</li>
+                <li>Research</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="project" data-category="experiment">
+            <div class="project-visual visual-d" aria-hidden="true">
+              <span>04</span>
+            </div>
+            <div class="project-body">
+              <p class="project-meta">Experiment · 2024</p>
+              <h3>Paper Trail</h3>
+              <p>
+                A browser toy that turns reading notes into a spatial map. Built
+                to test whether spatial memory helps people return to ideas.
+              </p>
+              <ul class="tags">
+                <li>Prototype</li>
+                <li>Canvas</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>Nothing in this category yet.</p>
+      </section>
+
+      <section id="skills" class="skills">
+        <div class="section-label">Skills</div>
+        <ul class="skill-list">
+          <li>
+            <h3>Design</h3>
+            <p>Product strategy, interface design, prototyping, design systems, workshops.</p>
+          </li>
+          <li>
+            <h3>Front end</h3>
+            <p>HTML, CSS, JavaScript, accessible components, responsive layout.</p>
+          </li>
+          <li>
+            <h3>Collaboration</h3>
+            <p>Working with engineers, writing specs, and presenting work to non-designers.</p>
+          </li>
+          <li>
+            <h3>Tools</h3>
+            <p>Figma, FigJam, VS Code, Git, and a stubborn affection for plain CSS.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="section-label">Contact</div>
+        <div class="contact-grid">
+          <div>
+            <h2>Tell me what you are building.</h2>
+            <p>
+              I take a small number of projects each season. A short note about
+              the problem, the timeline, and who it is for is enough to start.
+            </p>
+            <p class="contact-mail">
+              Or write directly:
+              <a href="mailto:hello@minapark.studio">hello@minapark.studio</a>
+            </p>
+          </div>
+          <form class="contact-form" id="contact-form" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+            <button class="button" type="submit">Send message</button>
+            <p class="form-success" id="form-success" role="status" hidden>
+              Thanks — your note is saved in this browser demo and is not emailed.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Mina Park</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
